@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+</head>
+<body>
+  <div class="modal" id="nicknameModal">
+    <div class="modal-content">
+      <h2>Выберите псевдоним</h2>
+      <input type="text" id="nicknameInput" placeholder="Введите никнейм..." />
+      <button id="nicknameBtn">Продолжить</button>
+      <p id="nicknameError" class="error"></p>
+    </div>
+  </div>
+  
+  <!-- Основное окно чата -->
+  <div class="chat-container" style="display: none;">
+    <aside>
+      <h3>Онлайн</h3>
+      <ul class="users"></ul>
+    </aside>
+    <main>
+      <div class="chat"></div>
+      <div class="chat-input">
+        <input type="text" class="message-text-input" placeholder="Введите сообщение..." />
+        <button class="message-text-send">Отправить</button>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
